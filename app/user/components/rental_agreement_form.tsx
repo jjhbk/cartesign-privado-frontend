@@ -19,7 +19,7 @@ import { useWallets } from "@web3-onboard/react";
 import { ethers } from "ethers";
 import { DappAbi } from "../page";
 import { encodeFunctionData } from "viem";
-import { advanceInput } from "cartesi-client";
+import { advanceInput } from "@mugen-builders/client";
 const RentalAgreementForm = (props: any) => {
   const { finalFormData, setFinalFormData } = useContext(FormDataContext);
   const { isModalOpen, setIsModalOpen } = useContext(ModalContext);

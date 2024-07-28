@@ -18,7 +18,7 @@ import EmploymentAgreementCard from "./employment_agreement_card";
 import { ethers } from "ethers";
 import { DappAbi, InspectCall, spinnerContext } from "../page";
 import { encodeFunctionData } from "viem";
-import { advanceInput } from "cartesi-client";
+import { advanceInput } from "@mugen-builders/client";
 import { Spinner } from "./spinner";
 export type SigContextType = {
   sigpadData: string;

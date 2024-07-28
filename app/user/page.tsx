@@ -21,7 +21,7 @@ import {
   advanceERC721Deposit,
   advanceEtherDeposit,
   advanceInput,
-} from "cartesi-client";
+} from "@mugen-builders/client";
 import "../globals.css";
 import Modal from "./components/modal";
 import EmploymentAgreementForm from "./components/employment_agreement_form";
