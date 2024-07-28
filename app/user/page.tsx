@@ -13,7 +13,6 @@ import {
 } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { useConnectWallet, useSetChain } from "@web3-onboard/react";
-import configFile from "./config.json";
 import { parseAbi } from "viem";
 import {
   advanceDAppRelay,
@@ -31,6 +30,8 @@ import Link from "next/link";
 import { Network } from "./components/network";
 import Dashboard from "./components/dashboard";
 import { Spinner } from "./components/spinner";
+import configFile from "./config.json";
+import { InspectCall } from "./exports";
 const config: any = configFile;
 const injected = injectedModule();
 
@@ -57,7 +58,7 @@ const dappAbi = parseAbi([
   "function addToWhiteList(address user)",
 ]);
 
-export const InspectCall = async (
+/*export const InspectCall = async (
   path: string,
   chainid: string
 ): Promise<any> => {
@@ -83,24 +84,7 @@ export const InspectCall = async (
     });
   return payload;
 };
-
-export type spinnerContextType = {
-  spinner: boolean;
-  setSpinner: (d: boolean) => void;
-};
-
-export const spinnerContext = createContext<spinnerContextType>({
-  spinner: false,
-  setSpinner: (d: boolean) => {},
-});
-export const DappAbi = parseAbi([
-  "function checkWhiteList(address user)",
-  "function addToWhiteList(address user)",
-  "function createAgreement(string agreement)",
-  "function acceptAgreement(string id,string signature)",
-  "function endAgreement(string id,string signature)",
-  "function terminateAgreement(string id,string signature,uint32 reason)",
-]);
+*/
 
 export default function Home() {
   const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
@@ -176,21 +160,16 @@ export default function Home() {
 
         <br />
       </div>
-      {spinner && <Spinner />}
-      {!spinner && (
-        <spinnerContext.Provider value={{ spinner, setSpinner }}>
-          {!isWhiteListed && connectedWallet && (
-            <div>
-              <Modal dapp={dappAddress} show={!isWhiteListed} />
-            </div>
-          )}
-          <div className="p-6">
-            {isWhiteListed && connectedWallet && (
-              <Dashboard dapp={dappAddress} />
-            )}
-          </div>
-        </spinnerContext.Provider>
+      (
+      {!isWhiteListed && connectedWallet && (
+        <div>
+          <Modal dapp={dappAddress} show={!isWhiteListed} />
+        </div>
       )}
+      <div className="p-6">
+        {isWhiteListed && connectedWallet && <Dashboard dapp={dappAddress} />}
+      </div>
+      )
     </div>
   );
 }

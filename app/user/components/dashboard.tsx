@@ -16,10 +16,11 @@ import RentalAgreementForm from "./rental_agreement_form";
 import RentalAgreementCard from "./rental_agreement_card";
 import EmploymentAgreementCard from "./employment_agreement_card";
 import { ethers } from "ethers";
-import { DappAbi, InspectCall, spinnerContext } from "../page";
+import { DappAbi } from "../exports";
 import { encodeFunctionData } from "viem";
 import { advanceInput } from "@mugen-builders/client";
 import { Spinner } from "./spinner";
+import { InspectCall } from "../exports";
 export type SigContextType = {
   sigpadData: string;
   setSigpadData: (d: string) => void;

@@ -7,7 +7,7 @@ import {
 } from "@/app/components/types";
 import React, { useEffect, useState } from "react";
 import sample_employment_agreement from "./sample_employment_agreement.json";
-import { InspectCall } from "../page";
+import { InspectCall } from "../exports";
 
 interface EmploymentAgreementCardProps {
   agreementId: string | undefined;

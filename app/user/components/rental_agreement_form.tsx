@@ -17,7 +17,7 @@ import {
 import { v4 as uuidv4 } from "uuid";
 import { useWallets } from "@web3-onboard/react";
 import { ethers } from "ethers";
-import { DappAbi } from "../page";
+import { DappAbi } from "../exports";
 import { encodeFunctionData } from "viem";
 import { advanceInput } from "@mugen-builders/client";
 const RentalAgreementForm = (props: any) => {

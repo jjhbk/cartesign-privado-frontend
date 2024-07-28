@@ -19,7 +19,7 @@ import { v4 as uuidv4 } from "uuid";
 import { useConnectWallet, useWallets } from "@web3-onboard/react";
 import { ethers } from "ethers";
 import { advanceInput } from "@mugen-builders/client";
-import { DappAbi } from "../page";
+import { DappAbi } from "../exports";
 import { encodeFunctionData } from "viem";
 const EmploymentAgreementForm = (props: any) => {
   const [connectedWallet] = useWallets();

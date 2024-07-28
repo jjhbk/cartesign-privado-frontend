@@ -7,7 +7,7 @@ import {
   terminationReasons,
 } from "@/app/components/types";
 import sample_rental_agreement from "./sample_rent_alagreement.json";
-import { InspectCall } from "../page";
+import { InspectCall } from "../exports";
 interface RentalAgreementCardProps {
   agreementId: string | undefined;
   chainId: string | null;
