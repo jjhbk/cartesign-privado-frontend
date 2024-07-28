@@ -1,0 +1,61 @@
+{
+  "agreementId": "",
+  "contractType": 2,
+  "contractCreator": "",
+  "status": 3,
+  "contractor": {
+    "name": "",
+    "contact": { "address": "", "phone": "", "email": "" },
+    "wallet": ""
+  },
+  "contractee": {
+    "name": "",
+    "contact": { "address": "", "phone": "", "email": "" },
+    "wallet": ""
+  },
+  "position": {
+    "title": "",
+    "department": "",
+    "startDate": "",
+    "endDate": "",
+    "fulltime": false
+  },
+  "compensation": {
+    "salary": { "amount": 0, "currency": 1, "frequency": 3 },
+    "bonuses": { "eligibility": false, "details": "", "amount": 0 },
+    "benefits": {
+      "healthInsurance": false,
+      "retirementPlan": false,
+      "paidTimeOff": { "days": 0, "type": 4 }
+    }
+  },
+  "responsibilities": [],
+  "termination": {
+    "noticePeriodDays": 0,
+    "reason": 8,
+    "Signatures": {
+      "contractor": {
+        "timestamp": 1721827063541,
+        "physical_signature": "",
+        "digital_signature": ""
+      },
+      "contractee": {
+        "timestamp": 1721827063541,
+        "physical_signature": "",
+        "digital_signature": ""
+      }
+    }
+  },
+  "signatures": {
+    "contractorSignature": {
+      "timestamp": 1721827063541,
+      "physical_signature": "",
+      "digital_signature": ""
+    },
+    "contracteeSignature": {
+      "timestamp": 1721827063541,
+      "physical_signature": "",
+      "digital_signature": ""
+    }
+  }
+}

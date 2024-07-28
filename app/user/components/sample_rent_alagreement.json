@@ -1,0 +1,65 @@
+{
+  "agreementId": "",
+  "contractType": 2,
+  "contractCreator": "",
+  "status": 1,
+  "property": {
+    "address": "",
+    "property_type": "",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "total_area_sqft": 0
+  },
+  "contractor": {
+    "name": "",
+    "contact": { "address": "", "phone": "", "email": "" },
+    "wallet": ""
+  },
+  "contractee": {
+    "name": "",
+    "contact": { "address": "", "phone": "", "email": "" },
+    "wallet": ""
+  },
+  "leaseTerms": {
+    "startDate": "",
+    "endDate": "",
+    "rent": { "amount": 0, "currency": 1, "dueDate": 1 },
+    "securityDeposit": { "amount": 0, "currency": 1 },
+    "lateFee": { "amount": 0, "currency": 1, "gracePeriod": 0 }
+  },
+  "utilities": { "included": [], "tenantResponsibilities": [] },
+  "maintenance": { "landlordResponsibility": [], "tenantResponsibility": [] },
+  "rules": {
+    "petsAllowed": false,
+    "smokingAllowed": false,
+    "sublettingAllowed": false
+  },
+  "termination": {
+    "noticePeriodDays": 0,
+    "reason": 8,
+    "Signatures": {
+      "contractor": {
+        "timestamp": 1721826942785,
+        "physical_signature": "",
+        "digital_signature": ""
+      },
+      "contractee": {
+        "timestamp": 1721826942785,
+        "physical_signature": "",
+        "digital_signature": ""
+      }
+    }
+  },
+  "signatures": {
+    "contractorSignature": {
+      "timestamp": 1721826942785,
+      "physical_signature": "",
+      "digital_signature": ""
+    },
+    "contracteeSignature": {
+      "timestamp": 1721826942785,
+      "physical_signature": "",
+      "digital_signature": ""
+    }
+  }
+}
