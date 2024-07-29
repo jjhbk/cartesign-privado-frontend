@@ -54,14 +54,16 @@ export default function Modal(props: any) {
       const universalVerifier = contract.connect(signer);
       console.log(await signer.getAddress(), universalVerifier);
       // You can call this method on behalf of any signer which is supposed to be request controller
-      const tx = await universalVerifier
-        .whiteList(1717138699, props.dapp)
-        .on("receipt", function (receipt: any) {
-          console.log(receipt);
-        });
+      const tx = await universalVerifier.whiteList(1717138699, props.dapp);
+
       console.log("Request set", tx);
+      alert(`tx successful , user whitelisted : ${JSON.stringify(tx)}`);
+      setShowModal(false);
     } catch (e) {
       console.log("error: ", e);
+      alert(
+        `Error: please generate and send a proof from you polygonID Wallet app first:${e}`
+      );
     }
   };
   return (

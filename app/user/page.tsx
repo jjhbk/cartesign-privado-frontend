@@ -29,7 +29,6 @@ import { HomeIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { Network } from "./components/network";
 import Dashboard from "./components/dashboard";
-import { Spinner } from "./components/spinner";
 import configFile from "./config.json";
 import { InspectCall } from "./exports";
 const config: any = configFile;
@@ -93,7 +92,6 @@ export default function Home() {
   const [contracts, setContracts] = useState(undefined);
   const [signer, setSigner] = useState<ethers.providers.JsonRpcSigner>();
   const [provider, setProvider] = useState<ethers.providers.Web3Provider>();
-  const [spinner, setSpinner] = useState<boolean>(false);
   const [dappAddress, setDappAddress] = useState<string>(
     "0xccf6a46CF287e1f8e1b2981c1f5B92BA77F3e9Ed"
   );
@@ -111,7 +109,6 @@ export default function Home() {
   };
 
   const checkWhitelist = async (id: string) => {
-    setSpinner(true);
     const provider = new ethers.providers.Web3Provider(
       connectedWallet.provider
     );
@@ -123,7 +120,6 @@ export default function Home() {
     console.log(_signer, address, id);
 
     const payload = await InspectCall(`whiteList/${address.toLowerCase()}`, id);
-    setSpinner(false);
     console.log("payload is", payload);
     if (JSON.parse(payload)?.result) {
       console.log("whitelist status is:", JSON.parse(payload)?.result);
