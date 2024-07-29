@@ -149,10 +149,9 @@ export default function Dashboard(props: any) {
     }
     setSpinner(true);
     const result = await advanceInput(signer, props.dapp, input);
-    result ? alert(`success`) : alert("request failed");
-
+    console.log(result);
+    alert(`success`);
     setSpinner(false);
-
     setIsSignModalOpen(false);
     setSigpadData("");
   };

@@ -191,7 +191,8 @@ const RentalAgreementForm = (props: any) => {
       });
       console.log("input is:", input, props.dapp);
       const result = await advanceInput(signer, props.dapp, input);
-      result ? alert(`success`) : alert("request failed");
+      console.log(result);
+      alert(`success`);
       setSpinner(false);
       setIsModalOpen(false);
     } catch (e) {
