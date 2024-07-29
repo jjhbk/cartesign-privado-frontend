@@ -93,8 +93,12 @@ export default function Home() {
   const [signer, setSigner] = useState<ethers.providers.JsonRpcSigner>();
   const [provider, setProvider] = useState<ethers.providers.Web3Provider>();
   const [dappAddress, setDappAddress] = useState<string>(
-    "0xccf6a46CF287e1f8e1b2981c1f5B92BA77F3e9Ed"
+    process.env.NEXT_PUBLIC_DAPP_AMOY_ADDRESS
+      ? process.env.NEXT_PUBLIC_DAPP_AMOY_ADDRESS
+      : "0x96Ef96d20a5b8b361A7d91318C12A75cDD7febc5"
   );
+  console.log(process.env.NEXT_PUBLIC_DAPP_AMOY_ADDRESS);
+
   // "0xFa7Cc7fBa257b915B7dE86bE3Eb3114FbA94701E"); //"0x48383296da5f7Ce3408Cf98445289daF48488607"
   const [connectedWallet] = useWallets();
   const addCustomInput = async (input: any): Promise<any> => {
