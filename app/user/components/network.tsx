@@ -60,7 +60,7 @@ export const Network: FC = () => {
               onChange={(e) => setDappAddress(e.target.value)}
             />
             <button
-              className="bg-sky-500 rounded-md p-2 text-sm shadow-sm focus:outline-none focus:ring  hover:bg-sky-700"
+              className="bg-red-500 rounded-md p-2 text-sm shadow-sm focus:outline-none focus:ring  hover:bg-red-700"
               onClick={() => disconnect(wallet)}
             >
               Disconnect Wallet
