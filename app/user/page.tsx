@@ -142,18 +142,18 @@ export default function Home() {
     }
   }, [connectedWallet]);
   return (
-    <div className="w-screen overflow-y-auto  h-dvh  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
+    <div className="">
       <div className="relative  divide-y divide-dashed divide-blue-400 flex flex-col">
-        <div className="flex justify-between  flex-row w-full">
+        <div className="navbar">
           <img
-            className=" rounded-full h-32 w-32"
+            className="roundlogo"
             src="https://jjhbk.github.io/assets/images/cartesign_logo.png"
           />
           <h1 className="font-bold font-sans text-2xl self-center justify-self-center">
             Cartesi-Privado Verifier
           </h1>
           <Link href={"/"}>
-            <HomeIcon className="h-20 w-20 active:scale-110 text-blue-300 " />
+            <HomeIcon className="home" />
           </Link>
         </div>
         <Network />

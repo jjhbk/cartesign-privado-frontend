@@ -43,7 +43,7 @@ export default function Signature() {
         </div>
       </div>
 
-      <div className="flex flex-row justify-start mx-3">
+      <div className="signer-buttons-wrapper">
         <button
           className="bg-sky-500 rounded-md px-4 mx-4 p-2 shadow-sm focus:outline-none focus:ring  hover:bg-sky-700"
           onClick={trim}

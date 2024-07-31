@@ -67,7 +67,7 @@ const EmploymentAgreementCard: React.FC<EmploymentAgreementCardProps> = ({
   };
 
   return (
-    <div className="max-w-2xl mx-auto bg-cyan-400 shadow-lg rounded-lg overflow-hidden">
+    <div className="max-w-2xl mx-auto card-content shadow-lg rounded-lg overflow-hidden">
       <div className="p-6">
         <h2 className="text-2xl font-semibold text-gray-900 mb-4">
           Employment Agreement

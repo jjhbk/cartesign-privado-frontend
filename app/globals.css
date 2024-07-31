@@ -18,16 +18,118 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+
+  background: #fafafa;
+  color: #4a545a;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  align-items: center;
+}
+
+.roundlogo {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.home {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.long-button-user {
+  margin-top: 20px;
+  width: 500px;
+}
+
+.qrcode-wrapper  {
+  padding: 20px;
+}
+
+.modalform-wrapper-transparent-filter {
+  background-color: #00000032;
+}
+
+.modalform-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #f4f4f4;
+
+}
+
+.modalform {
+  /* margin-top: 20; */
+  background-color: #f4f4f4;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.check-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signer-buttons-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signer-buttons-wrapper button {
+  width: 45%;
+}
+
+.card-wrapper {
+  background-color: #f4f4f4;
+}
+
+.card-content {
+  background-color: #f6f8fc;
+  color: #616161;
+}
+
+.chain-info {
+  display: flex;
+  width: 100%;
+}
+
+button {
+  color: white;
+}
+
+.change-color {
+  color: #4a545a!important;
+
 }

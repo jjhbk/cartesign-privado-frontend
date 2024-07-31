@@ -202,13 +202,13 @@ const RentalAgreementForm = (props: any) => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto">
       {spinner ? (
         <Spinner />
       ) : (
         <div>
           <form
-            className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+            className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-5"
             onSubmit={handleSubmit}
           >
             <h2 className="text-xl text-black font-bold mb-4">
@@ -855,7 +855,7 @@ const RentalAgreementForm = (props: any) => {
             </div>
 
             <h3 className="text-xl text-slate-700 font-bold mb-2">Rules</h3>
-            <div className="mb-4">
+            <div className="mb-4 check-side">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="petsAllowed"
@@ -872,7 +872,7 @@ const RentalAgreementForm = (props: any) => {
                 onChange={handleChange}
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 check-side">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="smokingAllowed"
@@ -888,7 +888,7 @@ const RentalAgreementForm = (props: any) => {
                 onChange={handleChange}
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 check-side">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="sublettingAllowed"
@@ -976,7 +976,7 @@ const RentalAgreementForm = (props: any) => {
               <Signature />
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="submit-wrapper">
               <button
                 onClick={handleSubmit}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
