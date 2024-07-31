@@ -533,7 +533,7 @@ const EmploymentAgreementForm = (props: any) => {
                 onChange={handleChange}
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 check-side">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="positionFulltime"
@@ -611,7 +611,7 @@ const EmploymentAgreementForm = (props: any) => {
             </div>
 
             <h3 className="text-xl text-slate-700 font-bold mb-2">Bonuses</h3>
-            <div className="mb-4">
+            <div className="mb-4 check-side">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="bonusEligibility"
@@ -663,7 +663,7 @@ const EmploymentAgreementForm = (props: any) => {
             </div>
 
             <h3 className="text-xl text-slate-700 font-bold mb-2">Benefits</h3>
-            <div className="mb-4">
+            <div className="mb-4 check-side">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="healthInsurance"
@@ -679,7 +679,7 @@ const EmploymentAgreementForm = (props: any) => {
                 onChange={handleChange}
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 check-side">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="retirementPlan"

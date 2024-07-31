@@ -303,9 +303,9 @@ export default function Dashboard(props: any) {
         )}
 
         {isViewModalOpen && (
-          <div className="fixed z-50 inset-0 overflow-y-auto">
+          <div className="fixed z-50 inset-0 overflow-y-auto modalform-wrapper-transparent-filter">
             <div className="flex items-center justify-center min-h-screen">
-              <div className="rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+              <div className="rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full mt-5 mb-5">
                 <div className="card-wrapper px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start justify-center">
                     <div className="mt-3 text-center sm:mt-0 sm:text-left">
@@ -366,7 +366,7 @@ export default function Dashboard(props: any) {
         )}
 
         {isSignModalOpen && (
-          <div className="fixed z-50 inset-0 overflow-y-auto">
+          <div className="fixed z-50 inset-0 overflow-y-auto modalform-wrapper-transparent-filter">
             <div className="flex items-center justify-center min-h-screen">
               <div className="rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
                 <div className="card-wrapper px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
