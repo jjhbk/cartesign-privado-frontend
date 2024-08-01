@@ -162,7 +162,7 @@ export default function Dashboard(props: any) {
       <div>
         <div className="container mx-auto p-6">
           <h1 className="text-2xl font-bold mb-4">Contracts</h1>
-          <table className="min-w-full bg-white">
+          <table className="min-w-full bg-white roundetable">
             <thead className="bg-gray-800 text-white">
               <tr>
                 <th className="py-2 px-4">Contract ID</th>
@@ -224,13 +224,13 @@ export default function Dashboard(props: any) {
         </div>
 
         {isModalOpen && (
-          <div className="fixed z-50 inset-0 overflow-y-auto">
-            <div className="flex items-center justify-center min-h-screen">
-              <div className="bg-cyan-200 rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
-                <div className="bg-cyan-300 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                  <div className="sm:flex sm:items-start justify-center">
-                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                      <div className="box-border bg-cyan-400 p-2 border-2 border-collapse  border-cyan-400 mt-3 flex flex-row justify-between text-center sm:mt-0 sm:ml-4 sm:text-left">
+          <div className="fixed z-50 inset-0 overflow-y-auto modalform-wrapper-transparent-filter">
+            <div className="modalform-wrapper">
+              <div className="">
+                <div className="modalform">
+                  <div className="">
+                    <div className="">
+                      <div className="card-head">
                         <h3
                           className="text-lg leading-6 font-medium text-gray-900 self-center"
                           id="modal-title"
@@ -246,7 +246,7 @@ export default function Dashboard(props: any) {
                           className="h-8 w-8 hover:scale-150 stroke-slate-500"
                         />
                       </div>
-                      <div className="mt-2 flex flex-row justify-evenly">
+                      <div className="mt-2 flex flex-row">
                         <button
                           onClick={() => {
                             setSelectedContractType(contractType.employment);
@@ -303,12 +303,12 @@ export default function Dashboard(props: any) {
         )}
 
         {isViewModalOpen && (
-          <div className="fixed z-50 inset-0 overflow-y-auto">
+          <div className="fixed z-50 inset-0 overflow-y-auto modalform-wrapper-transparent-filter">
             <div className="flex items-center justify-center min-h-screen">
-              <div className="bg-cyan-200 rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
-                <div className="bg-cyan-300 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div className="rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full mt-5 mb-5">
+                <div className="card-wrapper px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start justify-center">
-                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <div className="mt-3 text-center sm:mt-0 sm:text-left">
                       <div className="mt-3 flex flex-row justify-between text-center sm:mt-0 sm:ml-4 sm:text-left">
                         <h3
                           className="text-lg leading-6 font-medium text-gray-900 self-center"
@@ -366,10 +366,10 @@ export default function Dashboard(props: any) {
         )}
 
         {isSignModalOpen && (
-          <div className="fixed z-50 inset-0 overflow-y-auto">
+          <div className="fixed z-50 inset-0 overflow-y-auto modalform-wrapper-transparent-filter">
             <div className="flex items-center justify-center min-h-screen">
-              <div className="bg-cyan-200 rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
-                <div className="bg-cyan-300 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div className="rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+                <div className="card-wrapper px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start justify-center">
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                       <div className="mt-3 flex flex-row justify-between text-center sm:mt-0 sm:ml-4 sm:text-left">
