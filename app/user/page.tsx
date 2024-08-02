@@ -43,8 +43,8 @@ init({
     rpcUrl: v.rpcUrl,
   })),
   appMetadata: {
-    name: "Cartesi-Privado Verifier",
-    icon: "<svg>CarteSign<svg/>",
+    name: "DecentraSign Verifier",
+    icon: "<svg>DecentraSign<svg/>",
     description: "Cartesi Dapp with PrivadoID Verification",
     recommendedInjectedWallets: [
       { name: "MetaMask", url: "https://metamask.io" },
@@ -128,11 +128,11 @@ export default function Home() {
     if (JSON.parse(payload)?.result) {
       console.log("whitelist status is:", JSON.parse(payload)?.result);
 
-      alert("You are a registered user on Cartesign");
+      alert("You are a registered user on DecentraSign");
       setIsWhiteListed(true);
     } else {
       alert(
-        "you are not a registered user on Cartesign please verify your identity using Privado ID"
+        "you are not a registered user on DecentraSign please verify your identity using Privado ID"
       );
     }
   };
@@ -150,7 +150,7 @@ export default function Home() {
             src="https://jjhbk.github.io/assets/images/cartesign_logo.png"
           />
           <h1 className="font-bold font-sans text-2xl self-center justify-self-center">
-            Cartesi-Privado Verifier
+            DecentraSign
           </h1>
           <Link href={"/"}>
             <HomeIcon className="h-20 w-20 active:scale-110 text-blue-300 " />

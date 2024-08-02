@@ -24,7 +24,7 @@ export default function Landing() {
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
                   <h1 className="text-lime-400 font-semibold text-5xl">
-                    CarteSign
+                    DecentraSign
                   </h1>
                   <br />
                   <p className="mt-4 text-lg text-sky-50">
